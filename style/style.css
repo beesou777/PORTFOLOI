@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,400&family=Lato&display=swap");
+#pointer {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: hsla(221, 57%, 15%, 0.1);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  box-shadow: 0px 0px 200px hsla(221, 57%, 15%, 0.1), 0px 0px 250px hsla(221, 57%, 15%, 0.1), 0px 0px 350px hsla(221, 57%, 15%, 0.1);
+}
+
+.wrapper {
+  background: #111f3e;
+  height: 100%;
+  font-weight: 500;
+  font-family: "IBM Plex Serif";
+}
+.wrapper .container-max {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+.wrapper .container-max header {
+  max-width: 50%;
+  padding: 6rem 0;
+}
+@media (min-width: 1024px) {
+  .wrapper .container-max header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max header {
+    padding: 1rem 0;
+    max-width: 100%;
+  }
+}
+.wrapper .container-max header .header-description {
+  color: #cfd8ef;
+}
+.wrapper .container-max header .header-description .name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+.wrapper .container-max header .header-description .title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+}
+.wrapper .container-max header .header-description .about {
+  font-size: 1rem;
+  max-width: 85%;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max header .header-description .header-link {
+    display: none;
+  }
+}
+.wrapper .container-max header .header-description .header-link ul {
+  position: relative;
+  gap: 15px 0;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper .container-max header .header-description .header-link ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .container-max header .header-description .header-link ul li span {
+  height: 2px;
+  width: 35px;
+  transition: 0.3s;
+  background: #fff !important;
+}
+.wrapper .container-max header .header-description .header-link ul li a {
+  text-decoration: none;
+  color: #cfd8ef;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+}
+.wrapper .container-max header .header-description .header-link ul li:hover span {
+  width: 60px;
+}
+.wrapper .container-max header .header-social-links a {
+  color: #cfd8ef;
+  padding: 10px;
+}
+.wrapper .container-max header .header-social-links a:hover {
+  color: #fff;
+}
+.wrapper .container-max header .header-social-links a i {
+  font-size: 2rem;
+}
+.wrapper .container-max main {
+  width: 60%;
+  color: #a7bad7;
+  padding: 6rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main {
+    padding: 1rem 0;
+    width: 100%;
+  }
+}
+.wrapper .container-max main #about .about-text {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main #about .about-text {
+    position: sticky;
+    text-transform: uppercase;
+    top: 0;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background: hsla(220, 62%, 16%, 0.95);
+    padding: 1rem 10px;
+  }
+}
+.wrapper .container-max main #about span {
+  color: #fff;
+}
+.wrapper .container-max main #experience {
+  cursor: pointer;
+  padding-top: 100px;
+}
+.wrapper .container-max main #experience .experience-text {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main #experience .experience-text {
+    position: sticky;
+    top: 0;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background: hsla(220, 62%, 16%, 0.95);
+    text-transform: uppercase;
+    padding: 1rem 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main #experience {
+    padding: 1rem 0;
+  }
+}
+.wrapper .container-max main #experience .exp-card {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  color: #a7bad7 !important;
+  transition: 0.3s;
+}
+.wrapper .container-max main #experience .exp-card .company-name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.wrapper .container-max main #experience .exp-card .date {
+  text-wrap: nowrap;
+  letter-spacing: 1px;
+}
+.wrapper .container-max main #experience .exp-card .title {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+@media (min-width: 1024px) {
+  .wrapper .container-max main #experience .exp-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+  }
+}
+.wrapper .container-max main #projects {
+  cursor: pointer;
+  padding-top: 80px;
+}
+.wrapper .container-max main #projects .project-tect {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main #projects .project-tect {
+    position: sticky;
+    text-transform: uppercase;
+    top: 0;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background: hsla(220, 62%, 16%, 0.95);
+    padding: 1rem 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper .container-max main #projects {
+    padding: 1rem 0;
+  }
+}
+.wrapper .container-max main #projects .exp-card {
+  color: #a7bad7 !important;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  transition: 0.3s;
+}
+.wrapper .container-max main #projects .exp-card img {
+  max-width: 150px;
+  height: 80px;
+  -o-object-fit: conver;
+     object-fit: conver;
+}
+.wrapper .container-max main #projects .exp-card .detail .title {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .wrapper .container-max main #projects .exp-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
